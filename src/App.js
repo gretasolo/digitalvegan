@@ -1,42 +1,46 @@
-import React from 'react';
+import React, {useState} from 'react';
+import logo from './logo.svg';
 import './App.css';
-// import React, { useState } from 'react';
+
+let mainContent = ["https://www.youtube.com/embed/P28mbaFf52g?autoplay=1&lpp=1&autopause=0", "http://bit.ly/2WYqaX0","https://ampr.gs/33zv8fh","http://bit.ly/2O5M32H"]
 
 function App() {
   return (
-    <div id="everything">
-    <div className="Appp">
-     
-       <p>Digital Vegan</p> <p>learn more</p> 
-       <p>Keep the earth clean by keeping your digital life green</p>
-       <p>By streaming this video your carbon footprint is x.</p>
-       <p>Try Eco Mode</p>
-       <p>download</p>
-    </div>
-
-    <div className="Videodisplay">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/P28mbaFf52g" frameborder="0" allow="accelerometer" autoplay="1"></iframe>
-    </div>
-
-
-  
+  <div>
+  <Profile/>
   </div>
+  );
+} 
 
 
+function Profile(props) {
+
+ const [activate, setActivate] = useState("firstpic");
+
+ function ecoMode (e) {
+   setActivate (e.target.id);
+   console.log(e.target.id, activate);
+ }
+
+ //condition ? thingIfTrue : thingIfFalse
+
+  return (
+    <div className="profilepage">
+    <div className="firstline">
+      <button id="digitalvegan" onClick>Digital Vegan</button>
+      <button id="learn" onClick>Learn More</button>
+      <button id="chrome" onClick>Chrome Extension</button>
+    </div>
+    <div className="main">
+      <p>
+      <iframe width="520" height="315" src={mainContent[0]} frameborder="0" allow="autoplay" mute></iframe>
+      <img id="iconbutton" onClick={ecoMode} src={mainContent[1]} height="200" width="100" alt="value"/>
+      <img id="firstpic" src={(activate==="firstpic") ? mainContent[2] : mainContent[3]} height="315" width="520" alt="value"></img>
+      </p>
+      </div>
+    </div>
   );
 }
-// function Example() {
-//   // Declare a new state variable, which we'll call "count"
-//   const [count, setCount] = useState(0);
-
-//   return (
-//     <div>
-//       <p>You clicked {count} times</p>
-//       <button onClick={() => setCount(count + 1)}>
-//         Click me
-//       </button>
-//     </div>
-//   );
 
 
 
