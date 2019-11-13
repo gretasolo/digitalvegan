@@ -17,7 +17,6 @@ body {
 }
 
 #firstpic {
-  
   margin-top: 0px;
 }
 
@@ -42,11 +41,27 @@ body {
 }
 
 #digitalvegan {
-  flex: 1;
-  flex-basis: 0%;
+  /* flex: 1;
+  flex-basis: 0%; */
   width: 150px;
   height: 150px;
+  display: flex;
+  justify-content: center;
 }  
+
+#text1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: black;
+  color: white;
+  font-size: 15px;
+
+}
+
+#text1:hover {
+  opacity: 50%;
+}
 
 #learn {
   flex: .00005%;
@@ -54,8 +69,8 @@ body {
   color: white;
   font-family: 'Play', sans-serif;
   font-size: 20px;
-  width: 200px;
-  height: 75px;
+  width: 100px;
+  height: 55px;
 
 }
 #chrome {
@@ -64,8 +79,8 @@ body {
   color: white;
   font-family: 'Play', sans-serif;
   font-size: 20px;
-  width: 200px;
-  height: 75px;
+  width: 100px;
+  height: 55px;
 }
 
 .text {

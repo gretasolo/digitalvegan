@@ -21,9 +21,7 @@ function Profile(props) {
    setActivate (e.target.id);
    console.log(e.target.id, activate);
  }
-
  //condition ? thingIfTrue : thingIfFalse
-
   return (
     <div className="profilepage">
       
@@ -35,15 +33,15 @@ function Profile(props) {
 
       <div className="main">
       <p>
+      <div className= "text"> <p> Try Eco Mode to reduce your carbon footprint from online video streaming by 96.5% </p></div>
       <div className = 'container'>
       <div id= "video"><iframe width="520" height="315" src={mainContent[0]} frameborder="0" allow="autoplay" mute ></iframe> </div>
       {/* <img id="ecopic" src="" width="350" alt="Download Icon Png Leaf" /> */}
       <img id="firstpic" src={(activate==="firstpic") ? mainContent[2] : mainContent[3]} height="315" width="520" alt="value"></img> 
       </div>
-      <div className= "text"> <p> Try Eco Mode to reduce your carbon footprint from online video streaming by 96.5% </p></div>
       <img id="iconbutton" onClick={ecoMode} src={mainContent[1]} height="200" width="100" alt="value"/>
       <div className="text"><p>Eco Mode</p></div>
-      <div className= "text1"> <strong><p> Download </p></strong></div>
+      <button id = "text1"> <strong><p> Download </p></strong></button>
       </p> </div></div>
 
      
