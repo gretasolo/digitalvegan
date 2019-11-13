@@ -1,35 +1,97 @@
 
 body {
-  background-color: green;
-  
+  background-color:rgb(25, 85, 26);
+}
 
+#profilepage {
+  border: solid white;
+}
+#firstline {
+  border: solid white;
+}
+
+#video {
+  
+  width: 520px;
+  height: 315;
+}
+
+#firstpic {
+  
+  margin-top: 0px;
+}
+
+#iconbutton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+}
+
+#iconbutton:hover {
+  opacity: 50%;
 }
 
 .firstline {
   display:flex;
+  
+}
+#vegan {
+  flex: 50%;
 }
 
 #digitalvegan {
   flex: 1;
-  width:200px;
-  height: 30px;
-  border: solid white;
-  font-size: 20px;
-  background-color: green;
-  
-}
+  flex-basis: 0%;
+  width: 150px;
+  height: 150px;
+}  
 
 #learn {
-  flex: 20%;
-  flex-basis: 5;
+  flex: .00005%;
   background-color:black;
   color: white;
   font-family: 'Play', sans-serif;
+  font-size: 20px;
+  width: 200px;
+  height: 75px;
 
 }
-
 #chrome {
-  flex: 20%;
+  flex: .00005%;
   background-color:black;
   color: white;
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+  width: 200px;
+  height: 75px;
+}
+
+.text {
+  color: white;
+  font-family: 'Play', sans-serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* height: 55px; */
+  
+}
+
+.text1 {
+  color: white;
+  font-family: 'Play', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: white;
+  margin-top: .1%;
+
 }
