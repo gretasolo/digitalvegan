@@ -17,10 +17,12 @@ body {
   height: 315;
 }
 
-#firstpic {
-  margin-top: 0px;
+#firstvideo {
+  margin: 10px;
 }
-
+#video {
+  margin: 10px;
+}
 #iconbutton {
   display: block;
   margin-left: auto;
@@ -44,28 +46,14 @@ body {
 #digitalvegan {
   /* flex: 1;
   flex-basis: 0%; */
-  display: block;
-  margin-left: auto;
+  margin-left: 650px;
   margin-right: auto;
   width: 150px;
   height: 150px;
-  display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }  
 
-#text1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background: black;
-  color: white;
-  font-size: 15px;
 
-}
-
-#text1:hover {
-  opacity: 50%;
-}
 
 #learn {
   flex: .00005%;
@@ -98,21 +86,32 @@ body {
   
 }
 
-.text1 {
-  color: white;
+.clickers {
   font-family:  'Varela', sans-serif;
   display: flex;
   justify-content: center;
   text-align: center;
+  
+  
+
+}
+#text1 {
+  background: black;
+  margin: 10px;
+  color: white;
+  font-size: 30px;
+  
+  
+
+}
+#text2 {
+  background: black;
+  margin: 10px;
+  color: white;
+  font-size: 30px;
+
 }
 
-.text2 {
-  color: white;
-  font-family:  'Varela', sans-serif;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
 
 .container{
   display: flex;

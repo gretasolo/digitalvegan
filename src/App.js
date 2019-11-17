@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-let mainContent = ["https://www.youtube.com/embed/Byl87SBFoo8?autoplay=1&lpp=1&autopause=0", "https://i.ibb.co/cDvmsyB/download.png","https://www.youtube.com/embed/Byl87SBFoo8?autoplay=1&lpp=1&autopause=0","http://bit.ly/2qQdMws"]
+let mainContent = ["https://www.youtube.com/embed/Byl87SBFoo8?autoplay=1&lpp=1&autopause=0", "https://i.ibb.co/jWdkz85/ecomode.png","https://i.ibb.co/cDvmsyB/download.png","http://bit.ly/2qQdMws"]
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function Profile(props) {
     </div>
 
       <div className="main">
-      <p>
+      
       <div className= "text"> <p> Try Eco Mode to reduce your carbon footprint from online video streaming by 96.5% </p></div>
       <div className = 'container'>
       <div id= "video"><iframe width="520" height="315" src={mainContent[0]} frameborder="0" allow="autoplay" mute></iframe> </div>
@@ -40,10 +40,11 @@ function Profile(props) {
       <iframe id="firstvideo" src={(activate==="firstvideo") ? mainContent[0] : mainContent[2]} height="315" width="520" frameborder="0" allow="autoplay" mute alt="vid" ></iframe> 
       </div>
       <img id="iconbutton" onClick={ecoMode} src={mainContent[1]} height="200" width="100" alt="value"/>
-      
+      <div className = "clickers">
       <button id = "text1"> <strong><p> Yes! </p></strong></button>
-      <button id = "text2"> <strong><p> No! </p></strong></button>
-      </p> </div></div>
+      <button id = "text2"> <strong><p1> No! </p1></strong></button>
+      </div>
+      </div></div>
 
      
     
