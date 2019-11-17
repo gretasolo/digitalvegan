@@ -146,6 +146,15 @@ body {
 
 }
 
+#learnmore {
+  color: white;
+  font-family:  'Varela', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+}
+
 .displayco2 {
   color:white;
   margin: 21px;
