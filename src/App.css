@@ -12,17 +12,18 @@ body {
 }
 
 #video {
-  
-  width: 520px;
-  height: 315;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 10px;
 }
 
-#firstvideo {
-  margin: 10px;
+#video2 {
+  margin-right: 75px;
+  margin-left: 75px;
+  margin-bottom: 10px;
 }
-#video {
-  margin: 10px;
-}
+
+
 #iconbutton {
   display: block;
   margin-left: auto;
@@ -40,27 +41,23 @@ body {
   
 }
 #vegan {
-  flex: 50%;
+  text-align: center;
+  margin: .005px;
 }
 
-#digitalvegan {
-  /* flex: 1;
-  flex-basis: 0%; */
-  margin-left: 650px;
-  margin-right: auto;
-  width: 150px;
-  height: 150px;
-  /* justify-content: center; */
-}  
 
 
-
+#empty {
+  flex:80%;
+  background-color:rgb(25, 85, 26);
+  border: rgb(25, 85, 26);
+}
 #learn {
   flex: .00005%;
   background-color:black;
   color: white;
   font-family: 'Varela', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   width: 100px;
   height: 55px;
 
@@ -70,28 +67,29 @@ body {
   background-color:black;
   color: white;
   font-family:  'Varela', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   width: 100px;
   height: 55px;
 }
 
 .text {
-  color: black;
+  color: white;
   font-family:  'Varela', sans-serif;
   font-size: 20px;
   display: flex;
   justify-content: center;
   text-align: center;
+  
   /* height: 55px; */
   
 }
-.canyou {
+#canyou {
   color: white;
   font-family:  'Varela', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
-  text-align: center;
+  margin: .01px;
   /* height: 55px; */
   
 }
@@ -100,15 +98,42 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  
-  
-
 }
+
+.bighd {
+  display: flex;
+}
+
+#hd {
+  color: black;
+  font-family:  'Varela', sans-serif;
+  font-size: 20px;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  flex:50%;
+}
+
+
+#eco {
+  color: black;
+  font-family:  'Varela', sans-serif;
+  font-size: 20px;
+  /* display: flex;
+  justify-content: center;*/
+  text-align: center; 
+  flex:50%;
+}
+
+#line {
+  flex: 5%;
+}
+
 #text1 {
   background: black;
   margin: 10px;
   color: white;
-  font-size: 30px;
+  font-size: 15px;
   
   
 
@@ -117,8 +142,16 @@ body {
   background: black;
   margin: 10px;
   color: white;
-  font-size: 30px;
+  font-size: 15px;
 
+}
+
+.displayco2 {
+  color:white;
+  margin: 21px;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
 }
 
 
@@ -127,7 +160,7 @@ body {
   flex-direction: row;
   justify-content: center;
   border: white;
-  margin-top: .1%;
+  margin: 10;
 
 }
 
