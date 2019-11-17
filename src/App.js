@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-let mainContent = ["https://www.youtube.com/embed/Byl87SBFoo8?autoplay=1&lpp=1&autopause=0", "https://i.ibb.co/jWdkz85/ecomode.png","https://i.ibb.co/cDvmsyB/download.png","http://bit.ly/2qQdMws"]
+let mainContent = ["https://www.youtube.com/embed/Byl87SBFoo8?autoplay=1&lpp=1&autopause=0", "https://i.ibb.co/cDvmsyB/download.png","http://bit.ly/2qQdMws"]
 
 function App() {
   return (
@@ -33,17 +33,18 @@ function Profile(props) {
 
       <div className="main">
       
-      <div className= "text"> <p> Try Eco Mode to reduce your carbon footprint from online video streaming by 96.5% </p></div>
+      <div className= "text"> <p> Keep your digital life clean to keep the earth green with a click of a button </p></div>
       <div className = 'container'>
       <div id= "video"><iframe width="520" height="315" src={mainContent[0]} frameborder="0" allow="autoplay" mute></iframe> </div>
       {/* <img id="ecopic" src="" width="350" alt="Download Icon Png Leaf" /> */}
-      <iframe id="firstvideo" src={(activate==="firstvideo") ? mainContent[0] : mainContent[2]} height="315" width="520" frameborder="0" allow="autoplay" mute alt="vid" ></iframe> 
+      <iframe id="firstvideo" src={(activate==="firstvideo") ? mainContent[0] : mainContent[3]} height="315" width="520" frameborder="0" allow="autoplay" mute alt="vid" ></iframe> 
       </div>
-      <img id="iconbutton" onClick={ecoMode} src={mainContent[1]} height="200" width="100" alt="value"/>
+      <div className= "canyou"> <p> Can you tell the difference? </p></div>
       <div className = "clickers">
       <button id = "text1"> <strong><p> Yes! </p></strong></button>
       <button id = "text2"> <strong><p1> No! </p1></strong></button>
       </div>
+      <img id="iconbutton" onClick={ecoMode} src={mainContent[1]} height="200" width="100" alt="value"/>
       </div></div>
 
      

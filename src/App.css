@@ -76,6 +76,16 @@ body {
 }
 
 .text {
+  color: black;
+  font-family:  'Varela', sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* height: 55px; */
+  
+}
+.canyou {
   color: white;
   font-family:  'Varela', sans-serif;
   font-size: 25px;
@@ -85,7 +95,6 @@ body {
   /* height: 55px; */
   
 }
-
 .clickers {
   font-family:  'Varela', sans-serif;
   display: flex;
