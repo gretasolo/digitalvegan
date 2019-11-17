@@ -1,6 +1,7 @@
 
 body {
   background-color:rgb(25, 85, 26);
+  font-family:  'Varela', sans-serif;
 }
 
 #profilepage {
@@ -43,6 +44,9 @@ body {
 #digitalvegan {
   /* flex: 1;
   flex-basis: 0%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 150px;
   height: 150px;
   display: flex;
@@ -67,7 +71,7 @@ body {
   flex: .00005%;
   background-color:black;
   color: white;
-  font-family: 'Play', sans-serif;
+  font-family: 'Varela', sans-serif;
   font-size: 20px;
   width: 100px;
   height: 55px;
@@ -77,7 +81,7 @@ body {
   flex: .00005%;
   background-color:black;
   color: white;
-  font-family: 'Play', sans-serif;
+  font-family:  'Varela', sans-serif;
   font-size: 20px;
   width: 100px;
   height: 55px;
@@ -85,7 +89,7 @@ body {
 
 .text {
   color: white;
-  font-family: 'Play', sans-serif;
+  font-family:  'Varela', sans-serif;
   font-size: 25px;
   display: flex;
   justify-content: center;
@@ -96,7 +100,15 @@ body {
 
 .text1 {
   color: white;
-  font-family: 'Play', sans-serif;
+  font-family:  'Varela', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.text2 {
+  color: white;
+  font-family:  'Varela', sans-serif;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -109,4 +121,10 @@ body {
   border: white;
   margin-top: .1%;
 
+}
+
+@font-face {
+  font-family:  'Varela', sans-serif;
+  src: url ('https://fonts.googleapis.com/css?family=Varela&display=swap')
+ 
 }
