@@ -57,7 +57,7 @@ function Profile(props) {
       
 
 
-      <video ref={videoRef} className="video-js"></video>
+      {/* <video ref={videoRef} className="video-js"></video> */}
 
 
 
@@ -71,7 +71,8 @@ function Profile(props) {
 
       
       <div id= "learnmore"> <p>
-<strong>Learn More</strong> <br></br><br></br>
+       
+        <br></br><strong>Learn More</strong> <br></br><br></br>
 
 <u>Problem: </u>
  
