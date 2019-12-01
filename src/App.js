@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
+import videojs from 'video.js';
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,15 +13,24 @@ function App() {
   );
 } 
 
-
 function Profile(props) {
 
  const [activate, setActivate] = useState("");
+
+ const videoRef = useRef();
 
  function ecoMode (e) {
    setActivate (e.target.id);
    console.log(e.target.id, activate);
  }
+// 
+//  useEffect(() => {
+//   const player = videojs(videoRef.current, {autoplay: true, techOrder: ["youtube"], sources: [{ type: "video/youtube", src: "https://www.youtube.com/watch?v=Byl87SBFoo8"}]}, function onPlayerReady() {
+//     console.log('onPlayerReady')
+//    });
+//  });
+
+
  //condition ? thingIfTrue : thingIfFalse
   return (
     <div className="profilepage">
@@ -45,6 +55,12 @@ function Profile(props) {
       <div id= "eco"><strong>Eco Mode</strong></div>
       </div>
       
+
+
+      <video ref={videoRef} className="video-js"></video>
+
+
+
       <div className = "clickers">
       <div id= "canyou"> <p id="line"> Can you tell the difference? </p>
       <button id = "text1" onClick={ecoMode}> <strong><p> Yes! </p></strong></button>
@@ -52,6 +68,8 @@ function Profile(props) {
       <p className ="displayco2">{(activate==="text1") ? "The difference is that you are saving 50kg of CO2" : ""} {(activate==="text2") ? "The difference is you are saving 50kg of CO2" : ""}</p>
       </div>
       <img id="iconbutton" onClick={ecoMode} src={mainContent[1]} height="200" width="100" alt="value"/>
+
+      
       <div id= "learnmore"> <p>
 <strong>Learn More</strong> <br></br><br></br>
 
